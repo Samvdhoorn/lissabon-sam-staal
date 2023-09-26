@@ -1,8 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: #eeebe3;
-    font-family: roboto
+    background-color: white;
+    font-family: roboto;
+}
+
+h1{
+    font-family: caveat;
+    font-size: 3em;
+    
+    
+    
 }
 
 img{
@@ -11,7 +23,66 @@ img{
 
 ul{
     display: flex;
-    justify-content: space-between;
-    list-style: none;
+    justify-content: space-around;
+    list-style: none;   
+}
+
+
+
+
+nav{
+    background-color: #99c2a2;
+    padding: 1.5em;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+  
+}
+
+h1{
+    
+    color: black
+}
+
+.homepage-body img{
+    height: 100%;
+width: 100%;
+}
+.parent-container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+    
+
+
+.centered{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    font-size: 7em;
+    
+}
+
+main{
+    width: 50%;
+    margin: 2em;
+    font-family: quicksand;
+    
+}
+
+
+
+a:hover{
+    color: #DFE1E5;
+   
+
 }
 
