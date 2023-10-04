@@ -4,22 +4,50 @@
     box-sizing: border-box;
 }
 
+
+
+
+.parent-container img {
+    max-width: 100%;
+}
+
+.wrapper-index img {
+    max-width: 36em;
+    float: right;
+    margin-left: 3em;
+    margin-right: 2em;
+}
+
+.wrap-right img {
+    max-width: 26em;
+    max-height: auto;
+    float: right;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.wrap-left img {
+   float: left;
+   max-width: 26em;
+   max-height: auto;
+   margin: 2em;
+   
+}
+
+
+
 body{
     background-color: white;
     font-family: roboto;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
 }
 
-h1{
-    font-family: caveat;
-    font-size: 3em;
-    
-    
-    
-}
 
-img{
-    max-width: 100%;
-}
+
+
 
 ul{
     display: flex;
@@ -45,8 +73,16 @@ a{
 }
 
 h1{
-    
-    color: black
+     font-family: caveat;
+     font-size: 3em;
+     color: black;
+     margin-left: 0.5em;
+     margin-bottom: 0.5em;
+     margin-top: 0em;
+}
+
+p {
+    margin: 2em;
 }
 
 .homepage-body img{
@@ -66,23 +102,61 @@ width: 100%;
 .centered{
     position: absolute;
     top: 30%;
-    left: 30%;
     font-size: 7em;
+    text-align: center;
+    width: 100%;
     
 }
 
+
+
 main{
-    width: 50%;
+    width: 95%;
     margin: 2em;
-    font-family: quicksand;
-    
+    font-family: quicksand; 
 }
 
 
 
 a:hover{
     color: #DFE1E5;
-   
-
 }
 
+h2 {
+    margin-top: 8em;   
+}
+
+.centered {
+    animation: verschijn 1.5s;
+}
+
+@keyframes verschijn {
+    0% {
+        opacity: 0;
+    }
+    
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+footer h2 {
+    margin: 1em;
+}
+
+.homepage-body footer {
+    width: 95%;
+    margin: 2em;
+    font-family: quicksand; 
+    background-color: #F5F5F5;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #99c2a2;
+    border-radius: 0.5em;
+
+    
+}
