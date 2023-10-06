@@ -38,7 +38,7 @@
 
 body{
     background-color: white;
-    font-family: roboto;
+    font-family: roboto, sans-serif;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -73,7 +73,7 @@ a{
 }
 
 h1{
-     font-family: caveat;
+     font-family: caveat, sans-serif;
      font-size: 3em;
      color: black;
      margin-left: 0.5em;
@@ -113,7 +113,7 @@ width: 100%;
 main{
     width: 95%;
     margin: 2em;
-    font-family: quicksand; 
+    font-family: quicksand, sans-serif; 
 }
 
 
@@ -127,7 +127,7 @@ h2 {
 }
 
 .centered {
-    animation: verschijn 1.5s;
+    animation: verschijn 1.5s ease;
 }
 
 @keyframes verschijn {
@@ -144,19 +144,81 @@ h2 {
     }
 }
 
-footer h2 {
+
+
+main img:hover {
+    animation: vergroten 2s ease;
+}
+
+@keyframes vergroten {
+    0% {
+        transform: scale(1,1);
+    }
+
+    50% {
+        transform: scale(1.05,1.05);
+    }
+
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+#article-bron {
+    font-size: 1.3vh;
+    
+}
+
+#article-bron a {
+    color: #99c2a2;
+    font-size: 1.3vh;
+    
+}
+
+#article-bron a:hover {
+    text-decoration: underline;
+    color: darkgreen;
+}
+
+
+h2 {
+    margin: 0em;
+    display: inline-block;
+    width: 100%;
+    
+}
+
+#article-bron h2 {
     margin: 1em;
 }
 
-.homepage-body footer {
-    width: 95%;
+.homepage-body #article-bron {
+    width: 30%;
     margin: 2em;
-    font-family: quicksand; 
+    font-family: quicksand, sans-serif; 
     background-color: #F5F5F5;
-    border-style: solid;
+    border-style: none;
     border-width: 1px;
     border-color: #99c2a2;
     border-radius: 0.5em;
+}
 
+#article-bron h3{
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
     
 }
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: quicksand, sans-serif;
+    background-color: #99c2a2;
+    width: 100%;
+    margin: 0em;
+    
+}
+
