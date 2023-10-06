@@ -11,25 +11,22 @@
     max-width: 100%;
 }
 
-.wrapper-index img {
+.wrapper-index {
     max-width: 36em;
     float: right;
     margin-left: 3em;
     margin-right: 2em;
 }
 
-.wrap-right img {
+.wrap-right {
     max-width: 26em;
-    max-height: auto;
     float: right;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin: 2em;
 }
 
-.wrap-left img {
+.wrap-left {
    float: left;
    max-width: 26em;
-   max-height: auto;
    margin: 2em;
    
 }
