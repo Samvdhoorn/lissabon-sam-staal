@@ -11,11 +11,11 @@
     max-width: 100%;
 }
 
-.wrapper-index {
-    max-width: 36em;
+.homepage-body article:first-of-type img {
+    width: 36em;
     float: right;
-    margin-left: 3em;
-    margin-right: 2em;
+    margin-left: 0.5em;
+    /* margin-right: 2em; */
 }
 
 .wrap-right {
@@ -28,9 +28,18 @@
    float: left;
    max-width: 26em;
    margin: 2em;
+}
+
+.activiteiten-body article img {
+   width: 26em;
+   margin: 1em;
+   
    
 }
 
+.activiteiten-body article {
+    width: 95%;
+}
 
 
 body{
@@ -41,7 +50,6 @@ body{
     min-height: 100vh;
 
 }
-
 
 
 
@@ -84,7 +92,7 @@ p {
 
 .homepage-body img{
     height: 100%;
-width: 100%;
+    width: 100%;
 }
 .parent-container{
     position: relative;
@@ -117,6 +125,8 @@ main{
 
 a:hover{
     color: #DFE1E5;
+    
+    transition: all 0.25s ease
 }
 
 h2 {
@@ -161,22 +171,6 @@ main img:hover {
     }
 }
 
-#article-bron {
-    font-size: 1.3vh;
-    
-}
-
-#article-bron a {
-    color: #99c2a2;
-    font-size: 1.3vh;
-    
-}
-
-#article-bron a:hover {
-    text-decoration: underline;
-    color: darkgreen;
-}
-
 
 h2 {
     margin: 0em;
@@ -185,37 +179,40 @@ h2 {
     
 }
 
-#article-bron h2 {
-    margin: 1em;
-}
-
-.homepage-body #article-bron {
-    width: 30%;
-    margin: 2em;
-    font-family: quicksand, sans-serif; 
-    background-color: #F5F5F5;
-    border-style: none;
-    border-width: 1px;
-    border-color: #99c2a2;
-    border-radius: 0.5em;
-}
-
-#article-bron h3{
-    margin: 1em;
-    display: flex;
-    flex-direction: row;
-    
-}
-
-
-
-footer {
+footer ul{
     display: flex;
     justify-content: space-between;
     font-family: quicksand, sans-serif;
+    color: white;
     background-color: #99c2a2;
     width: 100%;
     margin: 0em;
-    
+    align-items: center;
 }
 
+footer a:hover {
+    text-decoration: underline;
+}
+
+.bronnenlijst {
+    background-color: #F6F6F6;
+    width: 40%;
+    margin: 2em;
+    margin-top: 4em;
+
+
+}
+
+.bronnenlijst h1, h2 {  
+    margin: 1em;
+    font-family: quicksand, sans-serif; 
+}
+
+.bronnenlijst a {
+    color: #99c2a2;
+}
+
+.bronnenlijst a:hover {
+    color: black;
+    text-decoration: underline;
+}
