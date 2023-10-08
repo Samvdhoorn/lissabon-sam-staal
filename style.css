@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,30 +11,29 @@
     max-width: 100%;
 }
 
-.homepage-body article:first-of-type img {
+.homepage-body article img {
     width: 36em;
     float: right;
-    margin-left: 0.5em;
-    /* margin-right: 2em; */
+    margin: 1.5em;
 }
 
-.wrap-right {
-    max-width: 26em;
-    float: right;
-    margin: 2em;
-}
-
-.wrap-left {
-   float: left;
-   max-width: 26em;
-   margin: 2em;
-}
 
 .activiteiten-body article img {
-   width: 26em;
-   margin: 1em;
-   
-   
+    width: 26em;
+    margin: 1em;
+
+
+}
+
+.bezichtigingen-body main img {
+    width: 26em;
+    margin: 1em;
+}
+
+
+.hapjes-body main img {
+    width: 26em;
+    margin: 1em;
 }
 
 .activiteiten-body article {
@@ -42,9 +41,9 @@
 }
 
 
-body{
+body {
     background-color: white;
-    font-family: roboto, sans-serif;
+    font-family: roboto, quicksand, sans-serif;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -54,83 +53,99 @@ body{
 
 
 
-ul{
+ul {
     display: flex;
     justify-content: space-around;
-    list-style: none;   
+    list-style: none;
 }
 
 
 
 
-nav{
+nav {
     background-color: #99c2a2;
     padding: 1.5em;
-    
-    
+
+
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
     font-size: large;
-  
+
 }
 
-h1{
-     font-family: caveat, sans-serif;
-     font-size: 3em;
-     color: black;
-     margin-left: 0.5em;
-     margin-bottom: 0.5em;
-     margin-top: 0em;
+h1 {
+    font-family: caveat, roboto, sans-serif;
+    font-size: 3em;
+    color: black;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    margin-top: 0em;
 }
 
 p {
     margin: 2em;
 }
 
-.homepage-body img{
+.homepage-body img {
     height: 100%;
     width: 100%;
 }
-.parent-container{
+
+.parent-container {
     position: relative;
     text-align: center;
     color: white;
 }
 
 
-    
+strong {
+    color: #9AC0F9;
+}
 
+.bezichtigingen-body article img:last-of-type {
+    width: 54.5em;
+    border-style: solid;
+    border-color: #9AC0F9;
+}
 
-.centered{
+.bezichtigingen-body article img:last-of-type:hover {
+    animation: none;
+}
+
+.hapjes-body article:first-of-type img {
+    width: 20em;
+}
+
+.centered {
     position: absolute;
     top: 30%;
     font-size: 7em;
     text-align: center;
     width: 100%;
-    
+
 }
 
 
 
-main{
+main {
     width: 95%;
     margin: 2em;
-    font-family: quicksand, sans-serif; 
+    font-family: quicksand, sans-serif;
 }
 
 
 
-a:hover{
+a:hover {
     color: #DFE1E5;
-    
+
     transition: all 0.25s ease
 }
 
 h2 {
-    margin-top: 8em;   
+    margin-top: 8em;
 }
 
 .centered {
@@ -141,7 +156,7 @@ h2 {
     0% {
         opacity: 0;
     }
-    
+
     25% {
         opacity: 0;
     }
@@ -159,15 +174,15 @@ main img:hover {
 
 @keyframes vergroten {
     0% {
-        transform: scale(1,1);
+        transform: scale(1, 1);
     }
 
     50% {
-        transform: scale(1.05,1.05);
+        transform: scale(1.05, 1.05);
     }
 
     100% {
-        transform: scale(1,1);
+        transform: scale(1, 1);
     }
 }
 
@@ -176,22 +191,27 @@ h2 {
     margin: 0em;
     display: inline-block;
     width: 100%;
-    
+
 }
 
-footer ul{
+footer ul {
     display: flex;
     justify-content: space-between;
     font-family: quicksand, sans-serif;
-    color: white;
-    background-color: #99c2a2;
+    color: black;
+    background-color: #F5F5F5;
     width: 100%;
     margin: 0em;
     align-items: center;
 }
 
+footer a {
+    color: black;
+}
+
 footer a:hover {
     text-decoration: underline;
+    color: #99c2a2;
 }
 
 .bronnenlijst {
@@ -200,19 +220,30 @@ footer a:hover {
     margin: 2em;
     margin-top: 4em;
 
-
 }
 
-.bronnenlijst h1, h2 {  
+
+.bronnenlijst h1,
+h2 {
     margin: 1em;
-    font-family: quicksand, sans-serif; 
+    font-family: quicksand, sans-serif;
+
 }
 
 .bronnenlijst a {
     color: #99c2a2;
+    font-size: 1em;
+
 }
 
 .bronnenlijst a:hover {
-    color: black;
     text-decoration: underline;
+}
+
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
