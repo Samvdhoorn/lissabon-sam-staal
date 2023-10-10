@@ -4,8 +4,20 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: white;
+    font-family: roboto, quicksand, sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 
+}
 
+main {
+    width: 95%;
+    margin: 2em;
+    font-family: quicksand, sans-serif;
+}
 
 .parent-container img {
     max-width: 100%;
@@ -21,8 +33,6 @@
 .activiteiten-body article img {
     width: 26em;
     margin: 1em;
-
-
 }
 
 .bezichtigingen-body main img {
@@ -40,40 +50,21 @@
     width: 95%;
 }
 
-
-body {
-    background-color: white;
-    font-family: roboto, quicksand, sans-serif;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-
-}
-
-
-
-
 ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
 }
 
-
-
-
 nav {
     background-color: #99c2a2;
     padding: 1.5em;
-
-
 }
 
 a {
     text-decoration: none;
     color: white;
     font-size: large;
-
 }
 
 h1 {
@@ -86,7 +77,11 @@ h1 {
 }
 
 p {
-    margin: 2em;
+    margin: 1em;
+}
+
+section p {
+    margin: 0em;
 }
 
 .homepage-body img {
@@ -128,25 +123,12 @@ strong {
 
 }
 
-
-
-main {
-    width: 95%;
-    margin: 2em;
-    font-family: quicksand, sans-serif;
-}
-
-
-
 a:hover {
     color: #DFE1E5;
 
     transition: all 0.25s ease
 }
 
-h2 {
-    margin-top: 8em;
-}
 
 .centered {
     animation: verschijn 1.5s ease;
@@ -189,10 +171,10 @@ main img:hover {
 
 h2 {
     margin: 0em;
-    display: inline-block;
     width: 100%;
 
 }
+
 
 footer ul {
     display: flex;
@@ -201,12 +183,15 @@ footer ul {
     color: black;
     background-color: #F5F5F5;
     width: 100%;
+    padding: 1em;
     margin: 0em;
     align-items: center;
 }
 
 footer a {
     color: black;
+    
+
 }
 
 footer a:hover {
@@ -247,3 +232,13 @@ h2 {
     align-items: center;
     justify-content: space-between;
 }
+
+h4 {
+    color: #99c2a2;
+    font-style: italic;
+}
+
+div:first-of-type {
+    width: 100%;
+}
+
